@@ -1,1 +1,27 @@
-
+:root{
+  --bg:#F9F9F9;
+  --txt:#111;
+  --accent:#004D40;
+  --white:#ffffff;
+  --grey:#eee;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--txt);line-height:1.6;}
+header{display:flex;align-items:center;justify-content:space-between;padding:15px 20px;background:var(--white);}
+.logo{height:28px;}
+nav a{margin-left:15px;text-decoration:none;color:var(--txt);font-weight:500;}
+section{padding:60px 20px;max-width:1000px;margin:auto;}
+#hero{text-align:center;}
+#hero h1{font-size:2.4rem;margin-bottom:10px;}
+.prix{font-size:1.8rem;color:var(--accent);margin:15px 0;}
+.btn{display:inline-block;padding:12px 30px;background:var(--accent);color:var(--white);text-decoration:none;border-radius:4px;font-weight:500;}
+.produit{display:flex;flex-wrap:wrap;gap:40px;align-items:center;}
+.produit img{flex:1 1 300px;border-radius:8px;}
+.text{flex:1 1 300px;}
+.commande form{display:flex;flex-direction:gap:12px;max-width:500px;margin:auto;}
+label{margin-top:10px;font-weight:500;}
+input,select,button{padding:10px;border:1px solid #ccc;border-radius:4px;}
+button{background:var(--accent);color:var(--white);border:none;cursor:pointer;margin-top:15px;}
+#recap{text-align:center;font-size:1.2rem;margin-top:15px;}
+footer{text-align:center;padding:20px;font-size:0.9rem;background:var(--grey);}
+@media(min-width:768px){.produit{flex-wrap:nowrap;}}
